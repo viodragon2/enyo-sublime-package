@@ -1,0 +1,11 @@
+{
+   "scope": "source.js",
+
+   "completions":
+   [
+      { "trigger": "kind\tEnyo: kind", "contents": "kind: ${1:${2:value}}${3:, }$0" },
+      { "trigger": "mixins\tEnyo: mixins", "contents": "mixins: ${1:[${2:value}]}${3:, }$0" },
+      { "trigger": "name\tEnyo: name", "contents": "name: ${1:'${2:value}'}${3:, }$0" },
+      { "trigger": "classes\tEnyo: classes", "contents": "classes: ${1:'${2:value}'}${3:, }$0" }
+   ]
+}
