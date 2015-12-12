@@ -1,0 +1,11 @@
+{
+	"extended_attribute_list": [
+	],
+
+	"core_attribute_list": [
+		["kind\tEnyo: kind", "kind: ${1:${2:value}}${3:, }$0" ],
+		["mixins\tEnyo: mixins", "mixins: ${1:[${2:value}]}${3:, }$0" ],
+		["name\tEnyo: name", "name: ${1:'${2:value}'}${3:, }$0" ],
+		["classes\tEnyo: classes", "classes: ${1:'${2:value}'}${3:, }$0" ]
+	]
+}
