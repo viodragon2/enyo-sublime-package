@@ -14,7 +14,7 @@ class enyoJSAttributeCompletion(sublime_plugin.EventListener):
 		return self.completions()
 
 	def completions(self):
-		core_attrs = [tuple(attr) for attr in self.settings.get('core_attribute_list')]
-		extended_attrs = [tuple(attr) for attr in self.settings.get('extended_attribute_list')]
-		extended_attrs += core_attrs
-		return (extended_attrs, sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
+		core_compl = [tuple(attr) for attr in self.settings.get('completions_list')]
+		extended_compl = [tuple(attr) for attr in self.settings.get('extended_completions_list')]
+		extended_compl += core_compl
+		return (extended_compl, sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)

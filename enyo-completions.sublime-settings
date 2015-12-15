@@ -1,11 +1,41 @@
 {
-	"extended_attribute_list": [
+	"extended_completions_list": [
 	],
 
-	"core_attribute_list": [
-		["kind\tEnyo: kind", "kind: ${1:${2:value}}${3:, }$0" ],
-		["mixins\tEnyo: mixins", "mixins: ${1:[${2:value}]}${3:, }$0" ],
-		["name\tEnyo: name", "name: ${1:'${2:value}'}${3:, }$0" ],
-		["classes\tEnyo: classes", "classes: ${1:'${2:value}'}${3:, }$0" ]
+	"completions_list": [
+		["kind\tEnyo", "kind: ${1:value}${2:, }$0" ],
+		["mixins\tEnyo", "mixins: [$1]${2:, }$0" ],
+
+		// enyo/UIComponent properties
+		["name\tEnyo", "name: '$1'${2:, }$0" ],
+		["id\tEnyo", "id: '$1'${2:, }$0" ],
+		["owner\tEnyo", "owner: $1${2:, }$0" ],
+		["componentOverrides\tEnyo", "componentOverrides: $1${2:, }$0" ],
+
+		// enyo/Control properties
+		["classes\tEnyo", "classes: '$1'${2:, }$0" ],
+		["style\tEnyo", "style: '$1'${2:, }$0" ],
+		["content\tEnyo", "content: '$1'${2:, }$0" ],
+		["defaultKind\tEnyo", "defaultKind: $1${2:, }$0" ],
+		["tag\tEnyo", "tag: '$1'${2:, }$0" ],
+		["allowHtml\tEnyo", "allowHtml: $1${2:, }$0" ],
+		["renderOnShow\tEnyo", "renderOnShow: $1${2:, }$0" ],
+		["canGenerate\tEnyo", "canGenerate: $1${2:, }$0" ],
+		["showing\tEnyo", "showing: $1${2:, }$0" ],
+
+		// life cycle methods
+		["create\tEnyo", "create: kind.inherit(function (sup) {\n\treturn function () {\n\t\tsup.apply(this, arguments);\n\t\t$1\n\t};\n})" ],
+		["rendered\tEnyo", "rendered: kind.inherit(function (sup) {\n\treturn function () {\n\t\tsup.apply(this, arguments);\n\t\t$1\n\t};\n})" ],
+		["destroy\tEnyo", "destroy: kind.inherit(function (sup) {\n\treturn function () {\n\t\tsup.apply(this, arguments);\n\t\t$1\n\t};\n})" ],
+		["constructor\tEnyo", "constructor: kind.inherit(function (sup) {\n\treturn function () {\n\t\tsup.apply(this, arguments);\n\t\t$1\n\t};\n})" ],
+		["constructed\tEnyo", "constructed: kind.inherit(function (sup) {\n\treturn function () {\n\t\tsup.apply(this, arguments);\n\t\t$1\n\t};\n})" ],
+
+		// blocks
+		["components\tEnyo", "components: [\n\t{$1}${2:, \n\t$3}\n]${4:, }$0" ],
+		["computed\tEnyo", "computed: [\n\t{method: '$1'${2:, path:['$4'${5:, '$6'}]}}\n]${7:, }$0" ],
+		["observers\tEnyo", "observers: [\n\t{method: '$1'${2:, path:['$4'${5:, '$6'}]}}\n]${7:, }$0" ],
+		["bindings\tEnyo", "bindings: [\n\t{from: '$1', to: '$2'}\n]${4:, }$0" ],
+		["events\tEnyo", "events: {\n\t$1: '$2'${3:,\n}\n}${4:, }$0" ],
+		["handlers\tEnyo", "handlers: {\n\t$1: '$2'${3:,\n}\n}${4:, }$0" ]
 	]
 }
