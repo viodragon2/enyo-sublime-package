@@ -17,12 +17,12 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/enyo-sublime-package/enyo-attributes.sublime-settings"},
+                                "args": {"file": "${packages}/enyo-sublime-package/enyo-completions.sublime-settings"},
                                 "caption": "Completion – Default"
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/enyo-attributes.sublime-settings"},
+                                "args": {"file": "${packages}/User/enyo-completions.sublime-settings"},
                                 "caption": "Completion – User"
                             }
                         ]
