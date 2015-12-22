@@ -1,0 +1,17 @@
+{
+    "cmd": ["epack"],
+    "working_dir": "${project_path:${folder}}",
+    "selector": ["source.js", "source.less", "source.json"],
+    "variants": [
+        {
+            "name": "epack --clean",
+            "cmd": ["epack --clean"],
+            "shell": true
+        },
+        {
+            "name": "enyo init",
+            "cmd": ["enyo init"],
+            "shell": true
+        }
+    ]
+}
