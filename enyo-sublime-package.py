@@ -14,6 +14,8 @@ class enyoJSAttributeCompletion(sublime_plugin.EventListener):
 	global enyo
 
 	def on_query_completions(self, view, prefix, locations):
+		if enyo.settings.get('disable_completions'):
+			return []
 		# Only trigger within JS
 		if not view.match_selector(locations[0],
 				'source.js - string.quoted - comment - meta.brace.square'):
