@@ -47,11 +47,11 @@ Enyo JS Auto-Completions
 Enyo JS Build
 ---
 ### Requirements
-Download [enyo-dev tool](https://github.com/enyojs/enyo-dev/), and make sure it's available in `PATH`.
+Install [enyo-dev tool](https://github.com/enyojs/enyo-dev/), and make sure it's available in `PATH`.
 
 ### Build Scripts
-Default is `epack` command. 
+Default is `epack` command.
 
 Other availble variants are :
-* epack --clean
-* enyo init
+* `epack --clean`
+* `enyo init`
