@@ -8,17 +8,18 @@ Installation Options
 
 Enyo JS Auto-Completions
 ---
+
 ######Reserved words
 * kind
 * mixins
 
-######enyo/UIComponent properties
+######`enyo/UIComponent` properties
 * name
 * id
 * owner
 * componentOverrides
 
-###### enyo/Control properties
+######`enyo/Control` properties
 * classes
 * style
 * content
@@ -55,3 +56,28 @@ Default is `epack` command.
 Other availble variants are :
 * `epack --clean`
 * `enyo init`
+
+Completions Settings
+---
+`Preferences > Package Settings > Enyo > Completions - User`
+
+####Extension
+You can extend or override the default completions provided by specifying `extended_completions_list`
+
+##### Example
+````
+{
+    "extended_completions_list":[
+        ["my_completion\tMy Completion", "my-completion: '${1:string}'$0"],
+    ]
+}
+````
+
+#### Enable/Disable
+In case you want to turn off auto completion, you may disable it by setting `disable_completions` to `true`. The default value is `false`.
+
+````
+{
+    disable_completions: true
+}
+````
