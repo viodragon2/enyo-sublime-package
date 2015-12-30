@@ -1,5 +1,8 @@
 {
     "cmd": ["epack"],
+    "env": {
+        "PATH": "/usr/local/bin"
+    },
     "working_dir": "${project_path:${folder}}",
     "selector": ["source.js", "source.less", "source.json"],
     "variants": [
