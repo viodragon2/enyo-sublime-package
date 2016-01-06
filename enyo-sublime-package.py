@@ -8,7 +8,7 @@ class EnyoJS:
 		core_compl = [tuple(attr) for attr in self.settings.get('completions_list')]
 		extended_compl = [tuple(attr) for attr in self.settings.get('extended_completions_list')]
 		extended_compl += core_compl
-		return (extended_compl, sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
+		return (extended_compl, sublime.INHIBIT_EXPLICIT_COMPLETIONS)
 
 class enyoJSAttributeCompletion(sublime_plugin.EventListener):
 	global enyo
